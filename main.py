@@ -7,11 +7,8 @@ from endpoints.employee import employee_bp
 app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-data_dir = os.path.join(basedir, 'data')
-if not os.path.exists(data_dir):
-    os.makedirs(data_dir)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(data_dir, "company.db")}'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql5721270:IUpPqbqNBI@sql5.freesqldatabase.com/sql5721270'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)

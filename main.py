@@ -6,8 +6,6 @@ from endpoints.employee import employee_bp
 
 app = Flask(__name__)
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql5721270:IUpPqbqNBI@sql5.freesqldatabase.com/sql5721270'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

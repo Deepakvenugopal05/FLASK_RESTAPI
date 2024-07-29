@@ -6,9 +6,6 @@ from db.department import Department
 department_bp = Blueprint('department_bp',__name__)
 
 
-
-
-
 @department_bp.route('',methods=['GET'])
 def get_all_departments():
     try:
